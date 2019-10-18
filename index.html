@@ -1,26 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-
-	<script type="text/javascript" src="main.js"></script>
-	 <link rel="stylesheet" href="style.css">
-	 <script src="main.js"></script>
-	<title>Weather app</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>A game</title>
 </head>
+
 <body>
+    <div class="container">
 
-	<div class="location">
-		<h1 class="location-timezone">Timezone</h1>
-		<canvas class="icon" width="128" height="128"></canvas>
-	</div>
-	<div class="temperature">
-			<div class="degree-section">
-		<h2 class="temperature-degree">34</h2>
-		<span>F</span>
-			</div>
-		<div class="temperature-description">Winter is coming</div>
-	</div>
-	<script src="skycons.js"></script>
+        <section class="game">
+            <div class="score">
+                <div class="player-score">
+                    <h2>Player</h2>
+                    <p>0</p>
+                </div>
+                <div class="computer-score">
+                    <h2>Computer</h2>
+                    <p>0</p>
+                </div>
+            </div>
+            <div class="intro">
+                <h1>A game</h1>
+                <button class="intro-button">Let's Play</button>
+            </div>
+            <div class="match fadeOut">
+                <h2 class="winner">Choose an option</h2>
+                <div class="hands">
+                    <img class="player-hand" src="img/rock.png" alt="">
+                    <img class="computer-hand" src="img/rock.png" alt="">
 
+                </div>
+                <div class="option">
+                    <button class="rock">rock</button>
+                    <button class="paper">paper</button>
+                    <button class="scissors">scissors</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="main.js"></script>
 </body>
+
 </html>

@@ -1,42 +1,138 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box; 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/tiuri\/Desktop\/rock-paper-scissor\(not\%20me\)\/style\.scss}line{font-family:\000031}}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/tiuri\/Desktop\/rock-paper-scissor\(not\%20me\)\/style\.scss}line{font-family:\000037}}
+section {
+  height: 100vh;
+  background-color: #272944;
+  font-family: sans-serif; }
 
-body{
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	background: linear-gradient(rgb(47, 150, 163),rgb(48, 62, 143));
-	font-family: sans-serif;
-	color:white;
-}
-.location, 
-.temperature{
-	height: 30vh;
-	width: 50%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-.temperature{
-	flex-direction: column;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/tiuri\/Desktop\/rock-paper-scissor\(not\%20me\)\/style\.scss}line{font-family:\0000313}}
+.score {
+  color: #e0e0f4;
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/tiuri\/Desktop\/rock-paper-scissor\(not\%20me\)\/style\.scss}line{font-family:\0000320}}
+  .score h2 {
+    font-size: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/tiuri\/Desktop\/rock-paper-scissor\(not\%20me\)\/style\.scss}line{font-family:\0000324}}
+  .score p {
+    text-align: center;
+    padding: 10px;
+    font-size: 25px; }
 
-.degree-section{
-	display: flex;
-	align-items: center;
-	cursor: pointer;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/tiuri\/Desktop\/rock-paper-scissor\(not\%20me\)\/style\.scss}line{font-family:\0000331}}
+.intro {
+  color: #e0e0f4;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: opacity 0.5s ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/tiuri\/Desktop\/rock-paper-scissor\(not\%20me\)\/style\.scss}line{font-family:\0000340}}
+  .intro h1 {
+    font-size: 50px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/tiuri\/Desktop\/rock-paper-scissor\(not\%20me\)\/style\.scss}line{font-family:\0000344}}
+  .intro button {
+    width: 150px;
+    height: 50px;
+    background-color: none;
+    border: none;
+    color: #e0e0f4;
+    font-size: 20px;
+    background-color: #2d7560;
+    border-radius: 3px;
+    cursor: pointer; }
 
-.degree-section span{
-	margin: 10px;
-	font-size: 30px;
-}
-.degree-section h2{
-	font-size:40px;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/tiuri\/Desktop\/rock-paper-scissor\(not\%20me\)\/style\.scss}line{font-family:\0000357}}
+.match {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease 0.5s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/tiuri\/Desktop\/rock-paper-scissor\(not\%20me\)\/style\.scss}line{font-family:\0000364}}
+  .match button {
+    width: 150px;
+    height: 50px;
+    background-color: none;
+    border: none;
+    color: #e0e0f4;
+    font-size: 20px;
+    background-color: #2d7560;
+    border-radius: 3px;
+    cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/tiuri\/Desktop\/rock-paper-scissor\(not\%20me\)\/style\.scss}line{font-family:\0000378}}
+.winner {
+  color: #e0e0f4;
+  text-align: center;
+  font-size: 50px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/tiuri\/Desktop\/rock-paper-scissor\(not\%20me\)\/style\.scss}line{font-family:\0000384}}
+.hands,
+.option {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/tiuri\/Desktop\/rock-paper-scissor\(not\%20me\)\/style\.scss}line{font-family:\0000391}}
+.player-hand {
+  transform: rotateY(180deg); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/tiuri\/Desktop\/rock-paper-scissor\(not\%20me\)\/style\.scss}line{font-family:\0000395}}
+div.fadeOut {
+  opacity: 0;
+  pointer-events: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/tiuri\/Desktop\/rock-paper-scissor\(not\%20me\)\/style\.scss}line{font-family:\00003100}}
+div.fadeIn {
+  opacity: 1;
+  pointer-events: all; }
+
+@keyframes shakePlayer {
+  0% {
+    transform: rotateY(180deg) translateY(0px); }
+  15% {
+    transform: rotateY(180deg) translateY(-50px); }
+  25% {
+    transform: rotateY(180deg) translateY(0px); }
+  35% {
+    transform: rotateY(180deg) translateY(-50px); }
+  50% {
+    transform: rotateY(180deg) translateY(0px); }
+  65% {
+    transform: rotateY(180deg) translateY(-50px); }
+  75% {
+    transform: rotateY(180deg) translateY(0px); }
+  85% {
+    transform: rotateY(180deg) translateY(-50px); }
+  100% {
+    transform: rotateY(180deg) translateY(0px); } }
+@keyframes shakeComputer {
+  0% {
+    transform: rotateY(180deg) translateY(0px); }
+  15% {
+    transform: translateY(-50px); }
+  25% {
+    transform: translateY(0px); }
+  35% {
+    transform: translateY(-50px); }
+  50% {
+    transform: translateY(0px); }
+  65% {
+    transform: translateY(-50px); }
+  75% {
+    transform: translateY(0px); }
+  85% {
+    transform: translateY(-50px); }
+  100% {
+    transform: translateY(0px); } }
+
+/*# sourceMappingURL=style.css.map */
